@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>testing VUE.js</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
+   
+    <div id="app">
+  {{ message }}
+  
+</div><!-- DIV app END-->
+
+<script>
+    var app = new VUE({
+        el: '#app',
+        data: {
+            message:'Hello'
+        }
+    })
+    </script>
     
 </body>
 </html>
